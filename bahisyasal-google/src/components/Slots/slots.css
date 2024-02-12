@@ -1,0 +1,427 @@
+.game-type {
+  margin-bottom: 30px
+}
+
+.game-types_top {
+  position: relative;
+  padding-top: 16px;
+  width: 100%
+}
+
+.game-types_top:after,.game-types_top:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 550px;
+  /* background: #e4f6fd url(/wp-content/themes/bahisyasal/images/backgrounds/bg-single-casino.png) 50% 0; */
+  background-attachment: fixed
+}
+
+.test {
+  font-size: 300px;
+  background-color: red;
+}
+
+.game-types_top:before {
+  z-index: -1
+}
+
+.game-types_top:after {
+  background: linear-gradient(180deg,#fff 0,rgba(255,255,255,.29) 100%);
+  z-index: 1
+}
+
+.game-types_top .container {
+  position: relative;
+  z-index: 4
+}
+
+.types_title {
+  text-align: center;
+  margin: 30px auto 50px;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -.03em
+}
+
+@media (min-width: 360px) {
+  .types_title {
+      margin:60px auto 80px;
+      font-size: 56px
+  }
+}
+
+@media (min-width: 490px) {
+  .types_title {
+      margin:88px auto 100px;
+      font-size: 72px
+  }
+}
+
+.types_list {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 32px
+}
+
+@media (min-width: 490px) {
+  .types_list {
+      grid-template-columns:repeat(2,1fr);
+      grid-gap: 20px
+  }
+}
+
+@media (min-width: 768px) {
+  .types_list {
+      grid-template-columns:repeat(3,1fr);
+      grid-gap: 30px
+  }
+}
+
+.types_item {
+  position: relative;
+  width: 100%
+}
+
+.types_link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e1eaf0;
+  box-sizing: border-box;
+  box-shadow: 0 5px 4px rgba(64,79,97,.05);
+  border-radius: 20px;
+  text-align: center
+}
+
+@media (min-width: 490px) {
+  .types_link {
+      display:block;
+      padding: 26px 0 46px
+  }
+}
+
+.types_link:focus,.types_link:hover {
+  border-color: #1292f0
+}
+
+.types_link:focus p,.types_link:hover p {
+  text-decoration: underline
+}
+
+.types_link img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-height: 60px
+}
+
+@media (min-width: 490px) {
+  .types_link img {
+      margin-bottom:26px;
+      max-height: 90px
+  }
+}
+
+.types_link p {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -.03em;
+  color: #2a3c90;
+  margin-left: 10px
+}
+
+@media (min-width: 490px) {
+  .types_link p {
+      margin-bottom:8px;
+      margin-left: 0
+  }
+}
+
+.types_number {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #1292f0;
+  box-sizing: border-box;
+  top: -25px;
+  right: -15px
+}
+
+.types_number span {
+  margin-right: 4px;
+  font-size: 0
+}
+
+@media (min-width: 490px) {
+  .types_number {
+      height:initial;
+      width: 100%;
+      top: initial;
+      right: initial;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: initial;
+      border-radius: initial;
+      border: 0;
+      background: 0 0
+  }
+
+  .types_number span {
+      font-size: 18px
+  }
+}
+
+.categories_filters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 50px;
+  padding: 0 5px;
+  background-color: #a0c6f7;
+  margin-bottom: 10px;
+  border-radius: 6px
+}
+
+.categories_filters span {
+  font-weight: 600
+}
+
+.categories_list {
+  display: grid;
+  box-sizing: border-box;
+  align-items: self-start
+}
+
+@media (min-width: 461px) {
+  .categories_list {
+      grid-template-columns:repeat(2,1fr);
+      grid-gap: 15px
+  }
+}
+
+@media (min-width: 768px) {
+  .categories_list {
+      grid-template-columns:repeat(3,1fr);
+      grid-gap: 20px
+  }
+}
+
+@media (min-width: 970px) {
+  .categories_list {
+      grid-template-columns:repeat(4,1fr);
+      grid-gap: 25px
+  }
+}
+
+.categories_item {
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  background-color: #bee9ff;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 20px;
+  padding: 10px 10px 0
+}
+
+@media (min-width: 460px) {
+  .categories_item {
+      margin-bottom:0;
+      padding: 0
+  }
+}
+
+.categories_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center
+}
+
+.categories_item p {
+  width: 100%;
+  margin: 0;
+  font-weight: 600;
+  color: #083e67;
+  padding: 10px 0
+}
+
+.categories_link:focus>p,.categories_link:hover>p {
+  background-color: #a0c6f7
+}
+
+.with_aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+@media (min-width: 991px) {
+  .with_aside {
+      flex-direction:row
+  }
+}
+
+.with_aside main {
+  margin-bottom: 15px
+}
+
+@media (min-width: 991px) {
+  .with_aside main {
+      width:calc(100% - 380px)
+  }
+}
+
+.aside {
+  width: 100%
+}
+
+@media (min-width: 991px) {
+  .aside {
+      max-width:350px
+  }
+}
+
+.top_c {
+  margin: 15px auto;
+  position: relative
+}
+
+@media (min-width: 991px) {
+  .top_c {
+      margin-bottom:15px
+  }
+}
+
+.top_c__article {
+  border: 1px solid #e1eaf0;
+  box-sizing: border-box;
+  box-shadow: 0 5px 4px rgba(64,79,97,.05);
+  border-radius: 20px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px
+}
+
+@media (min-width: 768px) {
+  .top_c__article {
+      flex-direction:row
+  }
+}
+
+.top_c__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+@media (min-width: 480px) {
+  .top_c__wrapper {
+      flex-direction:row;
+      justify-content: flex-start
+  }
+}
+
+@media (min-width: 768px) {
+  .top_c__wrapper {
+      width:calc(100% - 180px)
+  }
+}
+
+@media (min-width: 991px) {
+  .top_c__wrapper {
+      width:initial;
+      flex-direction: column
+  }
+}
+
+.top_c__image {
+  margin: 0 auto 20px
+}
+
+@media (min-width: 768px) {
+  .top_c__image {
+      margin:initial;
+      margin-right: 10px
+  }
+}
+
+.top_c__bonus,a.top_c__name {
+  width: 100%;
+  display: block;
+  font-weight: 700
+}
+
+a.top_c__name {
+  font-size: 24px;
+  text-decoration: none
+}
+
+.top_c__bonus {
+  line-height: 33px
+}
+
+@media (min-width: 991px) {
+  .top_c__bonus {
+      line-height:21px;
+      margin: 10px 0
+  }
+}
+
+.btn_top_c {
+  white-space: nowrap;
+  align-self: center
+}
+
+@media (min-width: 768px) {
+  .btn_top_c {
+      margin:initial;
+      margin-left: auto
+  }
+}
+
+.top_c__rating {
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  white-space: nowrap;
+  margin-left: 30px
+}
+
+.top_c__rating:before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 56px);
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  /* background: url(/wp-content/themes/bahisyasal/images/stars_slots_png/rating_on.png) 50% 50% no-repeat */
+}
+
+@media (min-width: 991px) {
+  .top_c__rating {
+      margin-left:0
+  }
+}
